@@ -206,11 +206,14 @@ test_preds, test_targs = learner.get_preds(ds_type=DatasetType.Test)
 The following proved extremely useful in developing the above
 workflow.  
 - A [question from Josh Varty][josh-varty-github-issue-1623] on github.
+- `fastai`'s forum thread [How can i treat the dependent variable of a
+  TabularDataBunch as
+  continuous?][fastai-forum-continuous-dependent-variables-for-tabular-data]
 - `fastai`'s [tabular inference learner
   documentation][fastai-tabular-inference-learner-doc]  and how to
   [Create a learner for inference][fastai-how-to-create-a-learner-for-inference]
-- [Making predictions in v1][fastai-forum-making-predictions-in-v1]
-  (fastai forum).
+- `fastai`'s forum thread [Making predictions in
+  v1][fastai-forum-making-predictions-in-v1]
 
 
 
@@ -227,3 +230,4 @@ workflow.
 [josh-varty-github-issue-1623]:  https://github.com/fastai/fastai/issues/1623
 [fastai-learner-export-doc]: https://docs.fast.ai/basic_train.html#Learner.export
 [fastai-get-preds-doc]: https://docs.fast.ai/basic_train.html#Learner.get_preds
+[fastai-forum-continuous-dependent-variables-for-tabular-data]: https://forums.fast.ai/t/how-can-i-treat-the-dependent-variable-of-a-tabulardatabunch-as-continuous/31670
