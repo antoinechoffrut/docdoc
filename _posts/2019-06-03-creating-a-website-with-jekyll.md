@@ -92,24 +92,18 @@ that makes sense for the type of your file, e.g. `html` or `md`).
 - Do _not_ initialize the repository with a README.  
 - Click on **Create repository**.  
 
+Next we need to create a repository for the website.  
+
+
 # At the terminal
 From your website's folder `.../github-page`, run
 ```bash
 git init
+git checkout -b gh-pages  # create branch "gh-pages" and switch to it
+git status -s  # to see what git sees
 ```
-
-Create a new branch named `gh-pages` and switch to it with
-```bash
-git checkout -b gh-pages
-```
-
-Run 
-```bash
-git status -s
-```
-to see the status of the files in your website's folder.  At this
-point you should
-probably only want to let git know about the following:
+At this point you should probably only want to let git know about the
+following:  
 ```
 .gitignore
 404.html
@@ -130,12 +124,30 @@ Add and commit:
 git add .
 git commit -m "Initial commit"
 ```
+Provided you have setup SSH keys to securely connect with GitHub, run
+```
+git remote add origin git@https://github.com/username/github-page.git
+git push origin gh-pages
+```
+
+# Back to the browser
+Refresh the web page on your new repository on GitHub, or enter again
+```
+https://github.com/username/github-page
+```
+to verify that it got updated correctly.  
+
+Click on **Settings** and scroll down to **"GithHub Pages"** to read
+that 
+> Your site is published at
+> https://username.github.io./github-page/
+
 
 
 
 ___  
 
-## Moving forward
+## Going a little bit beyond
 
 
 # Locating the theme files
