@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating image datasets with Google and fastai"
+title:  "Creating image datasets with Google and FastAI"
 date:   2019-06-10 14:16:00 +0100
 categories: datasets
 ---
@@ -11,12 +11,19 @@ lesson][fastai-lesson2-download] and a post by [Adrian
 Rosebrock][adrian-rosebrock-post].  It only deals with the creation of
 datasets and in particular imports minimal libraries.  
 
+For purpose of illustration, we will create a dataset consisting of
+images of the Eiffel tower and the Tokyo tower.  The images will be
+saved in two separate subfolders.
+
 # Setup
-I am using Safari on a Mac and I am using the [fastai v1][fastai-v1-docs] library.  
+- macOS Mojave (no GPU)
+- Safari 12.1.1
+- Python 3.7.1
+- [FastAI][fastai-v1-docs] 1.0.42 
+
 
 # Imports
 ```python
-import os
 import shutil
 from pathlib import Path
 from fastai.vision.data import download_images, verify_images
@@ -25,7 +32,7 @@ from fastai.vision.data import download_images, verify_images
 # The master folder
 Create the folder which will contain the folders with the datasets:
 ```python
-path = Path(os.path.join(os.path.expanduser('~'), 'Data', 'image-datasets'))
+path = Path.home() / 'Data' / 'image-datasets' / 'eiffel-tokyo'
 try:
     path.mkdir(parents=True, exist_ok=False)
 except OSError as e:
@@ -33,95 +40,79 @@ except OSError as e:
 
 ```
 
-# The url file
-We will run `javascript` on our browser to generate a file containing the urls for the
-images that later will be downloaded.  This file will be named
-`urls.txt` and it is assumed that it will be saved under the `Downloads` folder
-by the browser.
-```pyhon
-url_download = os.path.join(os.path.expanduser('~'), 'Downloads', 'urls.txt')
-```
-**Important.**  
-If a file `urls.txt` already exists, the browser will choose a
-different name (namely `urls2.txt`) and in turn we run risk of using
-the wrong set of urls when downloading images.  To avoid this
-situation, delete first the file `urls.txt` before proceeding.  
-```python
-try:
-    os.remove(url_download)
-    print(f'File {url_download} already existed, has been deleted.')
-except OSError as e:
-    print(e)
-```
+For **each** image, do the following.  
 
-# Obtaining ruls for the images from Google
-_Note._ The instructions on [fastai][fastai-lesson2-download] didn't
-quite work for me.  I haven't investigated the issue but
-`window.open()` seems to have no effect and no file gets downloaded.
-I suspect it may have to do with the browser that I am using.
-Instead, I follow [Adrian Rosebrock's post][adrian-rosebrock-post]
+1. Set image tag `img_tag`:
+   ```python
+   img_tag = 'eiffel_tower'
+   ```
+2. **Important:**  delete any existing download file to avoid loading wrong urls
+   from previous searches (if a file `urls.txt` already exists, the
+   browser will save the new file as `urls2.txt`):
+   ```python
+   try:
+     url_download.unlink()
+     print(f'File {url_download.name} already existed, has been deleted.')
+   except OSError as e:
+     print(e)
+	```
 
-1. Close the javascript console if it is already open (for instance if
-you have already generated one set of images and wish to generate
-another one), and (re-) open it.  (I have had issues with the console
-still generating the list of urls for the previous query, and it
-appeared to be resolved when closing the javascript console, but I
-haven't investigated this issue seriously.)  
-2. Search for the desired images on `https://images.google.com`.  
-3. Scroll down the page and click on `Show more results` until you are
-   satisfied with the number of images that appeared on the browser.  
-4. Run the following three blocks of javascript, one at a time:
-```javascript
-var script = document.createElement('script');
-script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js";
-document.getElementsByTagName('head')[0].appendChild(script);
-```
-```javascript
-var urls = $('.rg_di .rg_meta').map(function() { return JSON.parse($(this).text()).ou; });
-```
-```javascript
-var textToSave = urls.toArray().join('\n');
-var hiddenElement = document.createElement('a');
-hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
-hiddenElement.target = '_blank';
-hiddenElement.download = 'urls.txt';
-hiddenElement.click();
-```  
+1.   Open browser or close javascript console if already open.  
+1.  Search for desired images on google (corresponding to `img_tag`).  
+1.  Scroll down to view as many results as desired.  
+1.  Run following (one block at a time) in browser's javascript
+    console:  
+    - block 1:
+    	 ```javascript
+    	 var script = document.createElement('script');
+    	 script.src =
+    	 "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js";
+    	 document.getElementsByTagName('head')[0].appendChild(script);
+    	 ```
+    - block 2:
+    	 ```javascript
+    	 var urls = $('.rg_di .rg_meta').map(function() { return JSON.parse($(this).text()).ou; });
+    	 ```
+    - block 3: 
+    	 ```javascript
+    	 var textToSave = urls.toArray().join('\n');
+		 var hiddenElement = document.createElement('a');
+		 hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+		 hiddenElement.target = '_blank';
+		 hiddenElement.download = 'urls.txt';
+		 hiddenElement.click();
+		 ```
+ 
+    The last step should download a text file `urls.txt` into the
+ 	 `Downloads` folder with the list of URLs of the images from the
+ 	 Google search.    
+1.  Move and rename URL file.  
+    ```python
+    urls = path/f'urls_{img_tag}.txt'
+    shutil.copy(url_download, urls)
+    with urls.open() as f:
+      nb_lines = len(list(f))
+      print(f"File '{urls.name}' contains {nb_lines} lines.\n")
+    ```
+	
+1.  Let [fastai][fastai-building-your-own-dataset-doc] download images with provided URLs.  
+    ```python
+    dest = path/img_tag
+    print(f"Downloading images to {dest.absolute()}...")
+    download_images(urls, dest, max_pics=110, max_workers=0)
+	```
+1.  Let [fastai verify images][fastai-building-your-own-dataset-doc]
+    (will delete images that are not suitable):  
+    ```python
+    print(f'Verifying images in {dest.absolute()}\n\n')
+    verify_images(dest)
+    nb_images = sum(1 for img in dest.glob('*.*'))
+    print(f"\nThere are {nb_images} image files in folder '{dest.name}' after verification.")
+    ```
 
-At this point, a file `urls.txt` should have downloaded automatically
-into the `Downloads` folder.  
+	 
 
-Let's say that the images are of the Eiffel tower:
-```python
-img_tag = 'eiffel_tower'
-```
 
-Move and rename the url file:  
-
-```python
-file = f'urls_{img_tag}.txt'
-shutil.copy(url_download, os.path.join(str(path), file))
-with open(os.path.join(str(path), file)) as f:
-    nb_lines = len(list(f))
-    print(f'File {file} contains {nb_lines} lines.\n')
-```
-
-# Download and verify images with fastai
-Let fastai's [`download_images`][fastai-building-your-own-dataset-doc] do the work:  
-```python
-dest = path/img_tag
-print(f'Downloading images to {str(dest)}...')
-download_images(path/file, dest, max_pics=110, max_workers=0)
-```
-
-The [`verify_images`][fastai-building-your-own-dataset-doc] will delete images that are not suitable:  
-```python
-print(f'Verifying images in {str(dest)}\n\n')
-verify_images(dest)
-
-nb_images = len([iq for iq in os.scandir(str(dest))])
-print(f'\nThere are {nb_images} image files in {str(dest)} after verification.')
-```
 
 [fastai-lesson2-download]: https://github.com/fastai/course-v3/blob/master/nbs/dl1/lesson2-download.ipynb
 [fastai-v1-docs]: https://docs.fast.ai
