@@ -5,6 +5,7 @@ _site
 *.*~
 *.*
 
+# Posts
 !2019-06-03-creating-a-website-with-jekyll.md
 !2019-06-03-setting-up-aws-instances.md
 !2019-06-10-creating-image-datasets-with-google.md
@@ -13,3 +14,7 @@ _site
 !2019-08-22-how-to-learn-python.md
 !2019-08-27-python-file-handling.md
 !2019-09-10-mappa-coventrensis.md
+
+# Image files, etc.
+!assets/mappa-coventrensis/*.png
+!assets/regression-tab-data-fastai/
