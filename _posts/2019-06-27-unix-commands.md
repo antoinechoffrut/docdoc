@@ -57,6 +57,13 @@ Display complete time information (used with `-l`) including month, day, hour, m
 ls -lT file.txt
 ```
 
+Listing files by file extension (probably not robust nor safe, but
+solution is cute, from
+[superuser](superuser-cute-file-listing-by-extension)):  
+```bash
+ls | rev | sort | rev
+```
+
 
 Some options:  
 - `-a` lists everything in the directory, including hidden files,
@@ -243,6 +250,23 @@ du -d1
 ```
 
 
+# The `find` command
+[Find files with timestamps between two dates](askubuntu-find-files-between-two-dates):  
+```bash
+find . -type f -newermt 2010-10-07 ! -newermt 2014-10-08
+```
+
+# The `w` command  
+Displays who is logged in and what they are doing.  
+
+
+# The `xargs` command  
+Adjust the argument positionin `xargs` (from [LinuxAsk!](linuxask-adjust-argument-position-in-xargs))
+```bash
+echo "foo" | xargs -i echo {} "bar"
+foo bar
+```
+
 # Piping commands - a miscellany.
 
 Number of occurrences of unique values in a given column:
@@ -270,6 +294,13 @@ Show the names and login times of the currently logged in users:
 who | cut -c 1-8,26-38
 ```
 
+Sort a text file by line length including spaces
+(taken from [this stackoverflow post](stackoverflow-sort-by-line-length)):  
+```bash
+cat testfile | awk '{ print length, $0 }' | sort -n -s | cut -d" " -f2-
+```
+
+
 # References
 - [Check linux disk usage of files and directories](tecmint-du) (Tecmint)
 - ss64's [command line reference](ss64)
@@ -291,3 +322,7 @@ who | cut -c 1-8,26-38
 [thegeekstuff-cut-command-examples]: https://www.thegeekstuff.com/2013/06/cut-command-examples/
 [gilles-ls-for-human-consumption]: https://stackoverflow.com/a/3894410/9472676
 [wooledge-dont-parse-outputs-to-ls]: http://mywiki.wooledge.org/ParsingLs
+[askubuntu-find-files-between-two-dates]: https://askubuntu.com/a/533797/917310
+[superuser-cute-file-listing-by-extension]: https://superuser.com/a/292700
+[stackoverflow-sort-by-line-length]: https://stackoverflow.com/questions/5917576/sort-a-text-file-by-line-length-including-spaces
+[linuxask-adjust-argument-position-in-xargs]: echo "foo" | xargs -i echo {} "bar"
