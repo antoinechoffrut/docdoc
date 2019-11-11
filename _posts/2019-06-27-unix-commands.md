@@ -42,16 +42,24 @@ ls -d */
 List of changed directories:
 ```bash
 ls -ltc
+```
 
-
-List files in decreasing order of size:  
+List files in decreasing order of size and in long format:  
 ```bash
 ls -Sl
 ```
-List files in increasing order of size:  
+
+List files in increasing order of size and in long format:  
 ```bash
 ls -Slr
 ```
+
+List files in increasing order of size, where size is human-readable,
+and in in long format:  
+```bash
+ls -Slrh
+```
+
 Display complete time information (used with `-l`) including month, day, hour, minute, second, and year:  
 ```bash
 ls -lT file.txt
@@ -65,7 +73,7 @@ ls | rev | sort | rev
 ```
 
 
-Some options:  
+Some options ([more details at ss64.com](https://ss64.com/osx/ls.html)):  
 - `-a` lists everything in the directory, including hidden files,
   starting with `.`
 - `-l` use long listing format  (note `l` is an ell "l", not a one "1") including ([more info here](garron-ls-file-permissions)):  
@@ -79,13 +87,26 @@ Some options:
 - `-r` reverses order
 - `-u` sorts by last access time
 - `-F` shows the file type 
+- `-S` sort by size
 
 
-## Remark on parsing output of `ls`
+# Remark on parsing output of `ls`
 
 There is a viewpoint that [`ls` is designed for human
 consumption](gilles-ls-for-human-consumption) and therefore [outputs
 to `ls` should not be parsed](wooledge-dont-parse-outputs-to-ls).
+
+# The `head` command  
+The `head` command can also be used to display the first characters of a file:  
+```bash
+head -c 50 file.txt
+```
+
+# The `grep` command  
+Include number of lines:  
+```bash
+grep string file.txt -n
+```
 
 # The `wc` command
 Count the number of lines (`-l`), words (`-w`) or characters (`-c`):  
@@ -206,6 +227,7 @@ Suppose that the output of a `du` command is:
 1.0M ./joe
 4K   ./tim
 ```
+
 Piping this wih `sort -n` (numeric sort) will result in
 ```bash
 1.0M ./joe
@@ -222,10 +244,16 @@ A better solution is to use:
 
 Note that there will be rounding off.  
 
-To get the grand total:
+To get the grand total of a directory only (and not its subdirectory):
 ```bash
 du -s
 ```
+
+To get sizes of (immediate) subdirectories:
+```bash
+du -s /path/to/directory/*/
+```
+
 
 To display disk usage for all files and folders:
 ```bash 
@@ -251,9 +279,30 @@ du -d1
 
 
 # The `find` command
+Find subdirectories of given depth:  
+```bash
+find * -type d -depth 1 -print0 | xargs -0 -n1
+```
+Notes:  
+- `-0`: change xargs to expect NUL (``\0'') characters as separators,
+  instead of spaces and newlines   
+- `-n2`: set to `2` the maximum number of arguments taken from
+  standard input (i.e. will list two results on each line)
+
+Find subdirectories (of the`Download` directory) which are at least 30
+days old and display their sizes:  
+```bash
+find ~/Downloads/ -type d -depth 1 -ctime +30 -print0 | xargs -0 ls -ld
+```
+
 [Find files with timestamps between two dates](askubuntu-find-files-between-two-dates):  
 ```bash
 find . -type f -newermt 2010-10-07 ! -newermt 2014-10-08
+```
+
+[Find files sorted by modification date](https://superuser.com/a/298836)
+```bash
+find . -type f -name "*.txt" -print0 | xargs -0 ls -tl
 ```
 
 # The `w` command  
@@ -266,6 +315,14 @@ Adjust the argument positionin `xargs` (from [LinuxAsk!](linuxask-adjust-argumen
 echo "foo" | xargs -i echo {} "bar"
 foo bar
 ```
+
+# Emptying the trash
+Recursively (`-r`) remove (`rm`) all files without prompting for
+confirmation (`-f`):   
+```bash
+rm -rf ~/.Trash/*
+```
+
 
 # Piping commands - a miscellany.
 
@@ -300,6 +357,11 @@ Sort a text file by line length including spaces
 cat testfile | awk '{ print length, $0 }' | sort -n -s | cut -d" " -f2-
 ```
 
+# Miscellaneous  
+Batch renaming of files:  
+```bash
+for f in *.png; do echo mv "$f" "${f/_*_/_}"; done
+```
 
 # References
 - [Check linux disk usage of files and directories](tecmint-du) (Tecmint)

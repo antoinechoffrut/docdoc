@@ -28,7 +28,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Minima data fromat
+# Minima data format
 minima:
   date_format: "%Y/%m/%d"
 

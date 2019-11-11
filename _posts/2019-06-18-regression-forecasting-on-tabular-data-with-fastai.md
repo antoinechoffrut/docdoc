@@ -32,7 +32,7 @@ be used for **training** and **validation**:
 </p>
 and a dataframe `test` that will be used for inference:
 <p align="center">
-<img src="{{site.baseurl}}/assets/regression-tab-data-fastai/df-output.png" alt="Output of dataframe df"/>
+<img src="{{site.baseurl}}/assets/regression-tab-data-fastai/test-output.png" alt="Output of dataframe test"/>
 </p>
 
 ## Imports

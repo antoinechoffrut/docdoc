@@ -34,8 +34,7 @@ Lower Layer Super Output Areas (LSOAs) are are a geographic hierarchy designed
 to improve the reporting of small area statistics in England and
 Wales. 
 <p align="center">
-<img
-src="{{site.baseurl}}/assets/mappa-coventrensis/coventry-lsoas.png"
+<img src="{{site.baseurl}}/assets/mappa-coventrensis/coventry-lsoas.png"
 alt="Coventry LSOAs"/>
 </p>
 
