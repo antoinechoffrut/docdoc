@@ -20,3 +20,4 @@ _site
 # Image files, etc.
 !assets/mappa-coventrensis/*.png
 !assets/regression-tab-data-fastai/
+!assets/la-permanence/*.png
