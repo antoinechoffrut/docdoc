@@ -2,7 +2,7 @@
 layout: post
 title:  "Interacting with kaggle datasets"
 date:   2019-11-11 09:30:00 +0000
-categories: unix
+categories: kaggle
 ---
 
 
@@ -30,6 +30,11 @@ authentication token in a file `kaggle.json`.  Save this token in
 ```bash
 chmod 600 ~/.kaggle/kaggle.json
 ```
+*Note.*
+[Apparently](https://github.com/Kaggle/kaggle-api/issues/46#issuecomment-419904696)
+there can only be one active API token at a time. Creating a new one
+will automatically expire any existing ones. 
+
 
 # Generate a metadata file  
 With a folder created for the dataset,  
@@ -84,7 +89,7 @@ kaggle datasets version -p /path/to/dataset -m "Your message here" -d
 
 # Download dataset from kaggle account  
 ```bash
-kaggle datasets download -p PATH
+kaggle datasets download -p PATH kaggledataset
 ```
 where `PATH` is the path to the folder where files are to be
 downloaded.  
@@ -94,12 +99,12 @@ kaggle datasets download -p PATH -f FILENAME
 ```
 Force file download:  
 ```bash
-kaggle datasets download -p PATH -o
+kaggle datasets download -p PATH -o kaggledataset
 ```
 
 Note that files may be downloaded as `zip` files.  They can be unzip
 automatically with:  
 ```bash
-kaggle datasets download -p PATH --unzip
+kaggle datasets download -p PATH --unzip kaggledataset
 ```
 (the zip file will be deleted upon completion).
