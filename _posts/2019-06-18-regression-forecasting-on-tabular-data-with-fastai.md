@@ -50,7 +50,7 @@ import torch.nn.functional as F
 For training, 
 the `Learner` requires the following ingredients:
 - a `TabularDataBunch` and   
-- a `TabularMoel`.  
+- a `TabularModel`.  
 For inference, we will need a `TabularList`.  
 
 
@@ -104,8 +104,7 @@ _Remarks._
 - When we create our `Learner`, we will need the embedding
   and the ouput sizes of our data.  These are the attributes `emb_szs`
   and `c` (although they can also be calculated directly by hand).  
-  
-  Creating a `TabularDataBunch` directly from the class's
+-  Creating a `TabularDataBunch` directly from the class's
   `from_df` method generates the attribute `c` but not `emb_szs`.  On
   the other hand, the `TabularList` generates the attribute `emb_szs`
   but not `c`.  Using the data block API as above allows to generate
@@ -116,7 +115,7 @@ _Remarks._
 - I did not use `.add_test(test)`.  Somehow I ran into issues and I
   found other ways to do inference, see below.  
 
-## Additional `data`-dependent parameters
+## Additional `DataBunch`-dependent parameters
 The following parameters will be needed to construct the `Learner`:  
 
 ```python

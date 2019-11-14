@@ -100,8 +100,7 @@ travail.  Il s'agit de diagrammes en boîte ou boîtes de Tukey
 - les **valeurs aberrantes** sont indiquées par des circles  
 
 
-<p align="center"> <img
-src="{{site.baseurl}}/assets/la-permanence/moulin-boxplot-by-day-of-week.png"
+<p align="center"> <img src="{{site.baseurl}}/assets/la-permanence/moulin-boxplot-by-day-of-week.png"
 alt="Profils statistiques par jour de la semaine - Rue du Fer à
 Moulin"/> </p>
 
