@@ -107,6 +107,10 @@ Include number of lines:
 ```bash
 grep string file.txt -n
 ```
+Filter certain file extensions, exclude directories:
+```bash
+grep --exclude-dir "*checkpoints*" --include "*.ipynb" -Rn "numpy" .
+```
 
 # The `wc` command
 Count the number of lines (`-l`), words (`-w`) or characters (`-c`):  
@@ -279,6 +283,10 @@ du -d1
 
 
 # The `find` command
+Find files by name:  
+```bash
+find /path/to/subdirectory -name filename
+```
 Find subdirectories of given depth:  
 ```bash
 find * -type d -depth 1 -print0 | xargs -0 -n1
@@ -304,6 +312,10 @@ find . -type f -newermt 2010-10-07 ! -newermt 2014-10-08
 ```bash
 find . -type f -name "*.txt" -print0 | xargs -0 ls -tl
 ```
+
+Find filenames containing one criterion but not another:  
+[Link](https://unix.stackexchange.com/questions/315158/how-to-find-files-that-contain-one-criterion-but-exclude-a-different-criterion)
+
 
 # The `w` command  
 Displays who is logged in and what they are doing.  

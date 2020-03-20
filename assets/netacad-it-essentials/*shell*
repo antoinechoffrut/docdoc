@@ -1,0 +1,144 @@
+[py:3.7.4]
+[16:10:48 antoine:~/Projects/docdoc/_posts]
+$ ls
+#2020-03-05-netacad-it-essentials.md#
+2019-06-03-creating-a-website-with-jekyll.md
+2019-06-03-creating-a-website-with-jekyll.md~
+2019-06-03-installing-fastai.md~
+2019-06-03-setting-up-aws-instances.md
+2019-06-03-setting-up-aws-instances.md~
+2019-06-10-creating-image-datasets-with-google.md
+2019-06-10-creating-image-datasets-with-google.md~
+2019-06-18-regression-forecasting-on-tabular-data-with-fastai.md
+2019-06-18-regression-forecasting-on-tabular-data-with-fastai.md~
+2019-06-27-unix-commands.md
+2019-06-27-unix-commands.md~
+2019-08-22-how-to-learn-python.md
+2019-08-22-how-to-learn-python.md~
+2019-08-27-Python-file-handling.md~
+2019-08-27-python-file-handling.md
+2019-08-27-python-string-formatting.md
+2019-08-27-python-string-formatting.md~
+2019-09-10-mappa-coventrensis.md
+2019-09-10-mappa-coventrensis.md~
+2019-10-22-ESGI-150-Athletic-Club.md
+2019-10-22-ESGI-150-Athletic-Club.md~
+2019-11-11-Interacting-with-kaggle-datasets.md
+2019-11-11-Interacting-with-kaggle-datasets.md~
+2019-11-12-la-permanence.md
+2019-11-12-la-permanence.md~
+2019-12-03-fundamentals-of-cryptography.md
+2019-12-03-fundamentals-of-cryptography.md~
+2020-03-05-netacad-it-essentials.md
+2020-03-05-netacad-it-essentials.md~
+[py:3.7.4]
+[16:10:56 antoine:~/Projects/docdoc/_posts]
+$ cd ..
+[py:3.7.4]
+[16:10:57 antoine:~/Projects/docdoc]
+$ cd assets/
+[py:3.7.4]
+[16:10:59 antoine:~/Projects/docdoc/assets]
+$ ls -1
+esgi-150-athletic-club
+la-permanence
+mappa-coventrensis
+netacad-it-essentials
+regression-tab-data-fastai
+[py:3.7.4]
+[16:11:00 antoine:~/Projects/docdoc/assets]
+$ cd netacad-it-essentials/
+[py:3.7.4]
+[16:11:03 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls
+adapter-cards.jpg
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-dvi-to-vga.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-usb-to-ps2.jpg
+connector-auxiliary-power.jpg
+connector-berg.jpg
+connector-molex.jpg
+connector-pcie-power.jpg
+connector-sata.jpg
+connector-slotted.jpg
+expansion-slot-agp.jpg
+expansion-slot-mini-pci.jpg
+expansion-slot-pci-x.jpg
+expansion-slot-pci.jpg
+expansion-slot-pcie.jpg
+expansion-slot-riser-card.jpg
+memory-module-dimm.jpg
+memory-module-dip.jpg
+memory-module-simm.jpg
+memory-module-sodimm.jpg
+motherboard-connection-ide.png
+motherboard-connection-internal-usb.png
+motherboard-connection-sata.png
+other-ports-and-cables-audio-and-game.jpg
+other-ports-and-cables-ide.jpg
+other-ports-and-cables-network.jpg
+other-ports-and-cables-ps2.jpg
+other-ports-and-cables-sata.jpg
+other-ports-and-cables-usb.jpg
+rom-eeprom.jpg
+rom-eprom.jpg
+rom-prom.jpg
+rom.jpg
+storage-device-form-factors.jpg
+storage-devices.jpg
+storage-hdd-form-factors.jpg
+storage-magnetic-tape-drive.jpg
+storage-ssd-form-factors.jpg
+video-ports-and-cables-displayport.jpg
+video-ports-and-cables-dvi.jpg
+video-ports-and-cables-hdmi.jpg
+video-ports-and-cables-rca.jpg
+video-ports-and-cables-thunderbolt-1-and-2.jpg
+video-ports-and-cables-thunderbolt-3.jpg
+video-ports-and-cables-vga.jpg
+[py:3.7.4]
+[16:11:04 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls adapters-and-converters-*
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-dvi-to-vga.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-usb-to-ps2.jpg
+[py:3.7.4]
+[16:11:15 antoine:~/Projects/docdoc/assets/netacad-it-essentials]ls $ 
+[py:3.7.4]
+[18:33:25 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls tool*
+tool-cable-tester.jpg			tool-punch-down-tool.jpg		tool-wifi-analyzier.jpg
+tool-crimper.jpg			tool-technician-toolkit.jpg		tool-wire-cutter.jpg
+tool-multimeter.jpg			tool-tone-generator-and-probe.jpg	tool-wire-stripper.jpg
+[py:3.7.4]
+[18:33:29 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1 tool*
+tool-cable-tester.jpg
+tool-crimper.jpg
+tool-multimeter.jpg
+tool-punch-down-tool.jpg
+tool-technician-toolkit.jpg
+tool-tone-generator-and-probe.jpg
+tool-wifi-analyzier.jpg
+tool-wire-cutter.jpg
+tool-wire-stripper.jpg
+[py:3.7.4]
+[18:33:35 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1 *fiber-optic*
+network-cables-fiber-optic-connector-duplex-multimode.jpg
+network-cables-fiber-optic-connector-lucent.jpg
+network-cables-fiber-optic-connector-straight-tipe.jpg
+network-cables-fiber-optic-connector-subscriber.jpg
+network-cables-fiber-optic-cross-section.jpg
+network-cables-fiber-optic-diagram.jpg
+network-cables-fiber-optic-multimode.jpg
+network-cables-fiber-optic-single-mode.jpg
+[py:3.7.4]
+[19:56:06 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ 

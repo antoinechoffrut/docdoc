@@ -1,0 +1,879 @@
+[py:3.7.4]
+[16:10:48 antoine:~/Projects/docdoc/_posts]
+$ ls
+#2020-03-05-netacad-it-essentials.md#
+2019-06-03-creating-a-website-with-jekyll.md
+2019-06-03-creating-a-website-with-jekyll.md~
+2019-06-03-installing-fastai.md~
+2019-06-03-setting-up-aws-instances.md
+2019-06-03-setting-up-aws-instances.md~
+2019-06-10-creating-image-datasets-with-google.md
+2019-06-10-creating-image-datasets-with-google.md~
+2019-06-18-regression-forecasting-on-tabular-data-with-fastai.md
+2019-06-18-regression-forecasting-on-tabular-data-with-fastai.md~
+2019-06-27-unix-commands.md
+2019-06-27-unix-commands.md~
+2019-08-22-how-to-learn-python.md
+2019-08-22-how-to-learn-python.md~
+2019-08-27-Python-file-handling.md~
+2019-08-27-python-file-handling.md
+2019-08-27-python-string-formatting.md
+2019-08-27-python-string-formatting.md~
+2019-09-10-mappa-coventrensis.md
+2019-09-10-mappa-coventrensis.md~
+2019-10-22-ESGI-150-Athletic-Club.md
+2019-10-22-ESGI-150-Athletic-Club.md~
+2019-11-11-Interacting-with-kaggle-datasets.md
+2019-11-11-Interacting-with-kaggle-datasets.md~
+2019-11-12-la-permanence.md
+2019-11-12-la-permanence.md~
+2019-12-03-fundamentals-of-cryptography.md
+2019-12-03-fundamentals-of-cryptography.md~
+2020-03-05-netacad-it-essentials.md
+2020-03-05-netacad-it-essentials.md~
+[py:3.7.4]
+[16:10:56 antoine:~/Projects/docdoc/_posts]
+$ cd ..
+[py:3.7.4]
+[16:10:57 antoine:~/Projects/docdoc]
+$ cd assets/
+[py:3.7.4]
+[16:10:59 antoine:~/Projects/docdoc/assets]
+$ ls -1
+esgi-150-athletic-club
+la-permanence
+mappa-coventrensis
+netacad-it-essentials
+regression-tab-data-fastai
+[py:3.7.4]
+[16:11:00 antoine:~/Projects/docdoc/assets]
+$ cd netacad-it-essentials/
+[py:3.7.4]
+[16:11:03 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls
+adapter-cards.jpg
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-dvi-to-vga.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-usb-to-ps2.jpg
+connector-auxiliary-power.jpg
+connector-berg.jpg
+connector-molex.jpg
+connector-pcie-power.jpg
+connector-sata.jpg
+connector-slotted.jpg
+expansion-slot-agp.jpg
+expansion-slot-mini-pci.jpg
+expansion-slot-pci-x.jpg
+expansion-slot-pci.jpg
+expansion-slot-pcie.jpg
+expansion-slot-riser-card.jpg
+memory-module-dimm.jpg
+memory-module-dip.jpg
+memory-module-simm.jpg
+memory-module-sodimm.jpg
+motherboard-connection-ide.png
+motherboard-connection-internal-usb.png
+motherboard-connection-sata.png
+other-ports-and-cables-audio-and-game.jpg
+other-ports-and-cables-ide.jpg
+other-ports-and-cables-network.jpg
+other-ports-and-cables-ps2.jpg
+other-ports-and-cables-sata.jpg
+other-ports-and-cables-usb.jpg
+rom-eeprom.jpg
+rom-eprom.jpg
+rom-prom.jpg
+rom.jpg
+storage-device-form-factors.jpg
+storage-devices.jpg
+storage-hdd-form-factors.jpg
+storage-magnetic-tape-drive.jpg
+storage-ssd-form-factors.jpg
+video-ports-and-cables-displayport.jpg
+video-ports-and-cables-dvi.jpg
+video-ports-and-cables-hdmi.jpg
+video-ports-and-cables-rca.jpg
+video-ports-and-cables-thunderbolt-1-and-2.jpg
+video-ports-and-cables-thunderbolt-3.jpg
+video-ports-and-cables-vga.jpg
+[py:3.7.4]
+[16:11:04 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls adapters-and-converters-*
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-dvi-to-vga.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-usb-to-ps2.jpg
+[py:3.7.4]
+[16:11:15 antoine:~/Projects/docdoc/assets/netacad-it-essentials]ls $ 
+[py:3.7.4]
+[18:33:25 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls tool*
+tool-cable-tester.jpg			tool-punch-down-tool.jpg		tool-wifi-analyzier.jpg
+tool-crimper.jpg			tool-technician-toolkit.jpg		tool-wire-cutter.jpg
+tool-multimeter.jpg			tool-tone-generator-and-probe.jpg	tool-wire-stripper.jpg
+[py:3.7.4]
+[18:33:29 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1 tool*
+tool-cable-tester.jpg
+tool-crimper.jpg
+tool-multimeter.jpg
+tool-punch-down-tool.jpg
+tool-technician-toolkit.jpg
+tool-tone-generator-and-probe.jpg
+tool-wifi-analyzier.jpg
+tool-wire-cutter.jpg
+tool-wire-stripper.jpg
+[py:3.7.4]
+[18:33:35 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1 *fiber-optic*
+network-cables-fiber-optic-connector-duplex-multimode.jpg
+network-cables-fiber-optic-connector-lucent.jpg
+network-cables-fiber-optic-connector-straight-tipe.jpg
+network-cables-fiber-optic-connector-subscriber.jpg
+network-cables-fiber-optic-cross-section.jpg
+network-cables-fiber-optic-diagram.jpg
+network-cables-fiber-optic-multimode.jpg
+network-cables-fiber-optic-single-mode.jpg
+[py:3.7.4]
+[19:56:06 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ mv network-cables-fiber-optic-connector-straight-tipe.jpg network-cables-fiber-optic-connector-straight-type.jpg 
+[py:3.7.4]
+[20:05:22 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ mv network-cables-fiber-optic-connector-straight-type.jpg network-cables-fiber-optic-connector-straight-tip.jpg 
+[py:3.7.4]
+[20:08:14 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1 *case*
+case-fan-choice-factors.jpg
+[py:3.7.4]
+[16:42:08 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -t
+power-supply-choice-factors.jpg
+#*shell*#
+case-fan-choice-factors.jpg
+*shell*
+network-cables-fiber-optic-diagram.jpg
+nic-examples.jpg
+standard-802-11.jpg
+port-numbers-list.jpg
+port-numbers-network.jpg
+port-numbers-remote-access.jpg
+port-numbers-file.jpg
+port-numbers-email.jpg
+port-numbers-www.jpg
+model-tcp-ip.jpg
+network-cables-fiber-optic-connector-duplex-multimode.jpg
+network-cables-fiber-optic-connector-lucent.jpg
+network-cables-fiber-optic-connector-subscriber.jpg
+network-cables-fiber-optic-connector-straight-tip.jpg
+network-cables-fiber-optic-multimode.jpg
+network-cables-fiber-optic-single-mode.jpg
+network-cables-fiber-optic-cross-section.jpg
+network-cables-T568B-pinouts.jpg
+network-cables-T568A-pinouts.jpg
+network-cables-T568B.jpg
+network-cables-T568A.jpg
+network-cables-rj-45-utp-cable-and-socket.jpg
+network-cable-twisted-pair-shielded.jpg
+network-cables-twisted-pair-unshielded.jpg
+network-cables-coaxial-cable.jpg
+tool-wifi-analyzer.jpg
+tool-wire-cutter.jpg
+tool-wire-stripper.jpg
+tool-crimper.jpg
+tool-punch-down-tool.jpg
+tool-multimeter.jpg
+tool-cable-tester.jpg
+adapter-loopback.jpg
+tool-tone-generator-and-probe.jpg
+network-cables-examples.jpg
+other-ports-and-cables-serial-port.jpg
+other-ports-and-cables-parallel-computer-printer-port.jpg
+tool-technician-toolkit.jpg
+kvm-switch.jpg
+cables-and-connectors-examples.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-usb-to-ps2.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-dvi-to-vga.jpg
+other-ports-and-cables-usb.jpg
+other-ports-and-cables-ide.jpg
+other-ports-and-cables-sata.jpg
+other-ports-and-cables-network.jpg
+other-ports-and-cables-audio-and-game.jpg
+other-ports-and-cables-ps2.jpg
+video-ports-and-cables-rca.jpg
+video-ports-and-cables-vga.jpg
+video-ports-and-cables-thunderbolt-3.jpg
+video-ports-and-cables-thunderbolt-1-and-2.jpg
+video-ports-and-cables-hdmi.jpg
+video-ports-and-cables-displayport.jpg
+video-ports-and-cables-dvi.jpg
+storage-device-form-factors.jpg
+storage-ssd-form-factors.jpg
+storage-magnetic-tape-drive.jpg
+storage-hdd-form-factors.jpg
+storage-devices.jpg
+expansion-slot-pcie.jpg
+expansion-slot-pci-x.jpg
+expansion-slot-riser-card.jpg
+expansion-slot-mini-pci.jpg
+expansion-slot-agp.jpg
+expansion-slot-pci.jpg
+rom.jpg
+adapter-cards.jpg
+memory-module-sodimm.jpg
+memory-module-dimm.jpg
+memory-module-simm.jpg
+memory-module-dip.jpg
+rom-eeprom.jpg
+rom-eprom.jpg
+rom-prom.jpg
+motherboard-connection-internal-usb.png
+motherboard-connection-ide.png
+motherboard-connection-sata.png
+connector-pcie-power.jpg
+connector-auxiliary-power.jpg
+connector-berg.jpg
+connector-molex.jpg
+connector-sata.jpg
+connector-slotted.jpg
+[py:3.7.4]
+[16:44:10 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -tr
+connector-slotted.jpg
+connector-sata.jpg
+connector-molex.jpg
+connector-berg.jpg
+connector-auxiliary-power.jpg
+connector-pcie-power.jpg
+motherboard-connection-sata.png
+motherboard-connection-ide.png
+motherboard-connection-internal-usb.png
+rom-prom.jpg
+rom-eprom.jpg
+rom-eeprom.jpg
+memory-module-dip.jpg
+memory-module-simm.jpg
+memory-module-dimm.jpg
+memory-module-sodimm.jpg
+adapter-cards.jpg
+rom.jpg
+expansion-slot-pci.jpg
+expansion-slot-agp.jpg
+expansion-slot-mini-pci.jpg
+expansion-slot-riser-card.jpg
+expansion-slot-pci-x.jpg
+expansion-slot-pcie.jpg
+storage-devices.jpg
+storage-hdd-form-factors.jpg
+storage-magnetic-tape-drive.jpg
+storage-ssd-form-factors.jpg
+storage-device-form-factors.jpg
+video-ports-and-cables-dvi.jpg
+video-ports-and-cables-displayport.jpg
+video-ports-and-cables-hdmi.jpg
+video-ports-and-cables-thunderbolt-1-and-2.jpg
+video-ports-and-cables-thunderbolt-3.jpg
+video-ports-and-cables-vga.jpg
+video-ports-and-cables-rca.jpg
+other-ports-and-cables-ps2.jpg
+other-ports-and-cables-audio-and-game.jpg
+other-ports-and-cables-network.jpg
+other-ports-and-cables-sata.jpg
+other-ports-and-cables-ide.jpg
+other-ports-and-cables-usb.jpg
+adapters-and-converters-dvi-to-vga.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-usb-to-ps2.jpg
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+cables-and-connectors-examples.jpg
+kvm-switch.jpg
+tool-technician-toolkit.jpg
+other-ports-and-cables-parallel-computer-printer-port.jpg
+other-ports-and-cables-serial-port.jpg
+network-cables-examples.jpg
+tool-tone-generator-and-probe.jpg
+adapter-loopback.jpg
+tool-cable-tester.jpg
+tool-multimeter.jpg
+tool-punch-down-tool.jpg
+tool-crimper.jpg
+tool-wire-stripper.jpg
+tool-wire-cutter.jpg
+tool-wifi-analyzer.jpg
+network-cables-coaxial-cable.jpg
+network-cables-twisted-pair-unshielded.jpg
+network-cable-twisted-pair-shielded.jpg
+network-cables-rj-45-utp-cable-and-socket.jpg
+network-cables-T568A.jpg
+network-cables-T568B.jpg
+network-cables-T568A-pinouts.jpg
+network-cables-T568B-pinouts.jpg
+network-cables-fiber-optic-cross-section.jpg
+network-cables-fiber-optic-single-mode.jpg
+network-cables-fiber-optic-multimode.jpg
+network-cables-fiber-optic-connector-straight-tip.jpg
+network-cables-fiber-optic-connector-subscriber.jpg
+network-cables-fiber-optic-connector-lucent.jpg
+network-cables-fiber-optic-connector-duplex-multimode.jpg
+model-tcp-ip.jpg
+port-numbers-www.jpg
+port-numbers-email.jpg
+port-numbers-file.jpg
+port-numbers-remote-access.jpg
+port-numbers-network.jpg
+port-numbers-list.jpg
+standard-802-11.jpg
+nic-examples.jpg
+network-cables-fiber-optic-diagram.jpg
+*shell*
+case-fan-choice-factors.jpg
+#*shell*#
+power-supply-choice-factors.jpg
+[py:3.7.4]
+[16:44:15 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -tr
+connector-slotted.jpg						tool-cable-tester.jpg
+connector-sata.jpg						tool-multimeter.jpg
+connector-molex.jpg						tool-punch-down-tool.jpg
+connector-berg.jpg						tool-crimper.jpg
+connector-auxiliary-power.jpg					tool-wire-stripper.jpg
+connector-pcie-power.jpg					tool-wire-cutter.jpg
+motherboard-connection-sata.png					tool-wifi-analyzer.jpg
+motherboard-connection-ide.png					network-cables-coaxial-cable.jpg
+motherboard-connection-internal-usb.png				network-cables-twisted-pair-unshielded.jpg
+rom-prom.jpg							network-cable-twisted-pair-shielded.jpg
+rom-eprom.jpg							network-cables-rj-45-utp-cable-and-socket.jpg
+rom-eeprom.jpg							network-cables-T568A.jpg
+memory-module-dip.jpg						network-cables-T568B.jpg
+memory-module-simm.jpg						network-cables-T568A-pinouts.jpg
+memory-module-dimm.jpg						network-cables-T568B-pinouts.jpg
+memory-module-sodimm.jpg					network-cables-fiber-optic-cross-section.jpg
+adapter-cards.jpg						network-cables-fiber-optic-single-mode.jpg
+rom.jpg								network-cables-fiber-optic-multimode.jpg
+expansion-slot-pci.jpg						network-cables-fiber-optic-connector-straight-tip.jpg
+expansion-slot-agp.jpg						network-cables-fiber-optic-connector-subscriber.jpg
+expansion-slot-mini-pci.jpg					network-cables-fiber-optic-connector-lucent.jpg
+expansion-slot-riser-card.jpg					network-cables-fiber-optic-connector-duplex-multimode.jpg
+expansion-slot-pci-x.jpg					model-tcp-ip.jpg
+expansion-slot-pcie.jpg						port-numbers-www.jpg
+storage-devices.jpg						port-numbers-email.jpg
+storage-hdd-form-factors.jpg					port-numbers-file.jpg
+storage-magnetic-tape-drive.jpg					port-numbers-remote-access.jpg
+storage-ssd-form-factors.jpg					port-numbers-network.jpg
+storage-device-form-factors.jpg					port-numbers-list.jpg
+video-ports-and-cables-dvi.jpg					standard-802-11.jpg
+video-ports-and-cables-displayport.jpg				nic-examples.jpg
+video-ports-and-cables-hdmi.jpg					network-cables-fiber-optic-diagram.jpg
+video-ports-and-cables-thunderbolt-1-and-2.jpg			*shell*
+video-ports-and-cables-thunderbolt-3.jpg			case-fan-choice-factors.jpg
+video-ports-and-cables-vga.jpg					power-supply-choice-factors.jpg
+video-ports-and-cables-rca.jpg					motherboard-blue.jpg
+other-ports-and-cables-ps2.jpg					cpu-sockets.jpg
+other-ports-and-cables-audio-and-game.jpg			io-plate.jpg
+other-ports-and-cables-network.jpg				types-of-computer-ports.jpg
+other-ports-and-cables-sata.jpg					cmos-battery.jpg
+other-ports-and-cables-ide.jpg					computer-casing.jpg
+other-ports-and-cables-usb.jpg					power-supply-unit.jpg
+adapters-and-converters-dvi-to-vga.jpg				motherboard-red.jpg
+adapters-and-converters-usb-to-ethernet.jpg			cpu-or-processor.jpg
+adapters-and-converters-usb-to-ps2.jpg				chipset.jpg
+adapters-and-converters-dvi-to-hdmi.jpg				ram-memory-module.jpg
+adapters-and-converters-molex-to-sata.jpg			video-card.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg		rom-bios-fimware.jpg
+cables-and-connectors-examples.jpg				#*shell*#
+kvm-switch.jpg							bus.jpg
+tool-technician-toolkit.jpg					sound-card.jpg
+other-ports-and-cables-parallel-computer-printer-port.jpg	hard-disk.jpg
+other-ports-and-cables-serial-port.jpg				optical-drive.jpg
+network-cables-examples.jpg					computer-keyboard.jpg
+tool-tone-generator-and-probe.jpg				computer-mouse.jpg
+adapter-loopback.jpg						types-of-computer-monitors.jpg
+[py:3.7.4]
+[17:11:45 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1Â§tr
+ls: illegal option -- Â
+usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
+[py:3.7.4]
+[17:11:49 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1tr
+connector-slotted.jpg
+connector-sata.jpg
+connector-molex.jpg
+connector-berg.jpg
+connector-auxiliary-power.jpg
+connector-pcie-power.jpg
+motherboard-connection-sata.png
+motherboard-connection-ide.png
+motherboard-connection-internal-usb.png
+rom-prom.jpg
+rom-eprom.jpg
+rom-eeprom.jpg
+memory-module-dip.jpg
+memory-module-simm.jpg
+memory-module-dimm.jpg
+memory-module-sodimm.jpg
+adapter-cards.jpg
+rom.jpg
+expansion-slot-pci.jpg
+expansion-slot-agp.jpg
+expansion-slot-mini-pci.jpg
+expansion-slot-riser-card.jpg
+expansion-slot-pci-x.jpg
+expansion-slot-pcie.jpg
+storage-devices.jpg
+storage-hdd-form-factors.jpg
+storage-magnetic-tape-drive.jpg
+storage-ssd-form-factors.jpg
+storage-device-form-factors.jpg
+video-ports-and-cables-dvi.jpg
+video-ports-and-cables-displayport.jpg
+video-ports-and-cables-hdmi.jpg
+video-ports-and-cables-thunderbolt-1-and-2.jpg
+video-ports-and-cables-thunderbolt-3.jpg
+video-ports-and-cables-vga.jpg
+video-ports-and-cables-rca.jpg
+other-ports-and-cables-ps2.jpg
+other-ports-and-cables-audio-and-game.jpg
+other-ports-and-cables-network.jpg
+other-ports-and-cables-sata.jpg
+other-ports-and-cables-ide.jpg
+other-ports-and-cables-usb.jpg
+adapters-and-converters-dvi-to-vga.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-usb-to-ps2.jpg
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+cables-and-connectors-examples.jpg
+kvm-switch.jpg
+tool-technician-toolkit.jpg
+other-ports-and-cables-parallel-computer-printer-port.jpg
+other-ports-and-cables-serial-port.jpg
+network-cables-examples.jpg
+tool-tone-generator-and-probe.jpg
+adapter-loopback.jpg
+tool-cable-tester.jpg
+tool-multimeter.jpg
+tool-punch-down-tool.jpg
+tool-crimper.jpg
+tool-wire-stripper.jpg
+tool-wire-cutter.jpg
+tool-wifi-analyzer.jpg
+network-cables-coaxial-cable.jpg
+network-cables-twisted-pair-unshielded.jpg
+network-cable-twisted-pair-shielded.jpg
+network-cables-rj-45-utp-cable-and-socket.jpg
+network-cables-T568A.jpg
+network-cables-T568B.jpg
+network-cables-T568A-pinouts.jpg
+network-cables-T568B-pinouts.jpg
+network-cables-fiber-optic-cross-section.jpg
+network-cables-fiber-optic-single-mode.jpg
+network-cables-fiber-optic-multimode.jpg
+network-cables-fiber-optic-connector-straight-tip.jpg
+network-cables-fiber-optic-connector-subscriber.jpg
+network-cables-fiber-optic-connector-lucent.jpg
+network-cables-fiber-optic-connector-duplex-multimode.jpg
+model-tcp-ip.jpg
+port-numbers-www.jpg
+port-numbers-email.jpg
+port-numbers-file.jpg
+port-numbers-remote-access.jpg
+port-numbers-network.jpg
+port-numbers-list.jpg
+standard-802-11.jpg
+nic-examples.jpg
+network-cables-fiber-optic-diagram.jpg
+*shell*
+case-fan-choice-factors.jpg
+power-supply-choice-factors.jpg
+motherboard-blue.jpg
+cpu-sockets.jpg
+io-plate.jpg
+types-of-computer-ports.jpg
+cmos-battery.jpg
+computer-casing.jpg
+power-supply-unit.jpg
+motherboard-red.jpg
+cpu-or-processor.jpg
+chipset.jpg
+ram-memory-module.jpg
+video-card.jpg
+rom-bios-fimware.jpg
+#*shell*#
+bus.jpg
+sound-card.jpg
+hard-disk.jpg
+optical-drive.jpg
+computer-keyboard.jpg
+computer-mouse.jpg
+types-of-computer-monitors.jpg
+[py:3.7.4]
+[17:11:51 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls rom*
+rom-bios-fimware.jpg	rom-eeprom.jpg		rom-eprom.jpg		rom-prom.jpg		rom.jpg
+[py:3.7.4]
+[17:11:56 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ mv rom-bios-fimware.jpg rom-bios-firmware.jpg
+[py:3.7.4]
+[17:12:12 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ mv types-of-computer-monitors.jpg computer-monitor.jpg
+[py:3.7.4]
+[17:13:04 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ 
+[py:3.7.4]
+[17:15:16 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1tr
+connector-slotted.jpg
+connector-sata.jpg
+connector-molex.jpg
+connector-berg.jpg
+connector-auxiliary-power.jpg
+connector-pcie-power.jpg
+motherboard-connection-sata.png
+motherboard-connection-ide.png
+motherboard-connection-internal-usb.png
+rom-prom.jpg
+rom-eprom.jpg
+rom-eeprom.jpg
+memory-module-dip.jpg
+memory-module-simm.jpg
+memory-module-dimm.jpg
+memory-module-sodimm.jpg
+adapter-cards.jpg
+rom.jpg
+expansion-slot-pci.jpg
+expansion-slot-agp.jpg
+expansion-slot-mini-pci.jpg
+expansion-slot-riser-card.jpg
+expansion-slot-pci-x.jpg
+expansion-slot-pcie.jpg
+storage-devices.jpg
+storage-hdd-form-factors.jpg
+storage-magnetic-tape-drive.jpg
+storage-ssd-form-factors.jpg
+storage-device-form-factors.jpg
+video-ports-and-cables-dvi.jpg
+video-ports-and-cables-displayport.jpg
+video-ports-and-cables-hdmi.jpg
+video-ports-and-cables-thunderbolt-1-and-2.jpg
+video-ports-and-cables-thunderbolt-3.jpg
+video-ports-and-cables-vga.jpg
+video-ports-and-cables-rca.jpg
+other-ports-and-cables-ps2.jpg
+other-ports-and-cables-audio-and-game.jpg
+other-ports-and-cables-network.jpg
+other-ports-and-cables-sata.jpg
+other-ports-and-cables-ide.jpg
+other-ports-and-cables-usb.jpg
+adapters-and-converters-dvi-to-vga.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-usb-to-ps2.jpg
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+cables-and-connectors-examples.jpg
+kvm-switch.jpg
+tool-technician-toolkit.jpg
+other-ports-and-cables-parallel-computer-printer-port.jpg
+other-ports-and-cables-serial-port.jpg
+network-cables-examples.jpg
+tool-tone-generator-and-probe.jpg
+adapter-loopback.jpg
+tool-cable-tester.jpg
+tool-multimeter.jpg
+tool-punch-down-tool.jpg
+tool-crimper.jpg
+tool-wire-stripper.jpg
+tool-wire-cutter.jpg
+tool-wifi-analyzer.jpg
+network-cables-coaxial-cable.jpg
+network-cables-twisted-pair-unshielded.jpg
+network-cable-twisted-pair-shielded.jpg
+network-cables-rj-45-utp-cable-and-socket.jpg
+network-cables-T568A.jpg
+network-cables-T568B.jpg
+network-cables-T568A-pinouts.jpg
+network-cables-T568B-pinouts.jpg
+network-cables-fiber-optic-cross-section.jpg
+network-cables-fiber-optic-single-mode.jpg
+network-cables-fiber-optic-multimode.jpg
+network-cables-fiber-optic-connector-straight-tip.jpg
+network-cables-fiber-optic-connector-subscriber.jpg
+network-cables-fiber-optic-connector-lucent.jpg
+network-cables-fiber-optic-connector-duplex-multimode.jpg
+model-tcp-ip.jpg
+port-numbers-www.jpg
+port-numbers-email.jpg
+port-numbers-file.jpg
+port-numbers-remote-access.jpg
+port-numbers-network.jpg
+port-numbers-list.jpg
+standard-802-11.jpg
+nic-examples.jpg
+network-cables-fiber-optic-diagram.jpg
+*shell*
+case-fan-choice-factors.jpg
+power-supply-choice-factors.jpg
+motherboard-blue.jpg
+cpu-sockets.jpg
+io-plate.jpg
+types-of-computer-ports.jpg
+cmos-battery.jpg
+computer-casing.jpg
+power-supply-unit.jpg
+motherboard-red.jpg
+cpu-or-processor.jpg
+chipset.jpg
+ram-memory-module.jpg
+video-card.jpg
+rom-bios-firmware.jpg
+bus.jpg
+sound-card.jpg
+hard-disk.jpg
+optical-drive.jpg
+computer-keyboard.jpg
+computer-mouse.jpg
+computer-monitor.jpg
+#*shell*#
+computer-ports-from-great-mike.jpg
+[py:3.7.4]
+[17:16:59 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1tr
+connector-slotted.jpg
+connector-sata.jpg
+connector-molex.jpg
+connector-berg.jpg
+connector-auxiliary-power.jpg
+connector-pcie-power.jpg
+motherboard-connection-sata.png
+motherboard-connection-ide.png
+motherboard-connection-internal-usb.png
+rom-prom.jpg
+rom-eprom.jpg
+rom-eeprom.jpg
+memory-module-dip.jpg
+memory-module-simm.jpg
+memory-module-dimm.jpg
+memory-module-sodimm.jpg
+adapter-cards.jpg
+rom.jpg
+expansion-slot-pci.jpg
+expansion-slot-agp.jpg
+expansion-slot-mini-pci.jpg
+expansion-slot-riser-card.jpg
+expansion-slot-pci-x.jpg
+expansion-slot-pcie.jpg
+storage-devices.jpg
+storage-hdd-form-factors.jpg
+storage-magnetic-tape-drive.jpg
+storage-ssd-form-factors.jpg
+storage-device-form-factors.jpg
+video-ports-and-cables-dvi.jpg
+video-ports-and-cables-displayport.jpg
+video-ports-and-cables-hdmi.jpg
+video-ports-and-cables-thunderbolt-1-and-2.jpg
+video-ports-and-cables-thunderbolt-3.jpg
+video-ports-and-cables-vga.jpg
+video-ports-and-cables-rca.jpg
+other-ports-and-cables-ps2.jpg
+other-ports-and-cables-audio-and-game.jpg
+other-ports-and-cables-network.jpg
+other-ports-and-cables-sata.jpg
+other-ports-and-cables-ide.jpg
+other-ports-and-cables-usb.jpg
+adapters-and-converters-dvi-to-vga.jpg
+adapters-and-converters-usb-to-ethernet.jpg
+adapters-and-converters-usb-to-ps2.jpg
+adapters-and-converters-dvi-to-hdmi.jpg
+adapters-and-converters-molex-to-sata.jpg
+adapters-and-converters-hdmi-to-vga-converter.jpg
+cables-and-connectors-examples.jpg
+kvm-switch.jpg
+tool-technician-toolkit.jpg
+other-ports-and-cables-parallel-computer-printer-port.jpg
+other-ports-and-cables-serial-port.jpg
+network-cables-examples.jpg
+tool-tone-generator-and-probe.jpg
+adapter-loopback.jpg
+tool-cable-tester.jpg
+tool-multimeter.jpg
+tool-punch-down-tool.jpg
+tool-crimper.jpg
+tool-wire-stripper.jpg
+tool-wire-cutter.jpg
+tool-wifi-analyzer.jpg
+network-cables-coaxial-cable.jpg
+network-cables-twisted-pair-unshielded.jpg
+network-cable-twisted-pair-shielded.jpg
+network-cables-rj-45-utp-cable-and-socket.jpg
+network-cables-T568A.jpg
+network-cables-T568B.jpg
+network-cables-T568A-pinouts.jpg
+network-cables-T568B-pinouts.jpg
+network-cables-fiber-optic-cross-section.jpg
+network-cables-fiber-optic-single-mode.jpg
+network-cables-fiber-optic-multimode.jpg
+network-cables-fiber-optic-connector-straight-tip.jpg
+network-cables-fiber-optic-connector-subscriber.jpg
+network-cables-fiber-optic-connector-lucent.jpg
+network-cables-fiber-optic-connector-duplex-multimode.jpg
+model-tcp-ip.jpg
+port-numbers-www.jpg
+port-numbers-email.jpg
+port-numbers-file.jpg
+port-numbers-remote-access.jpg
+port-numbers-network.jpg
+port-numbers-list.jpg
+standard-802-11.jpg
+nic-examples.jpg
+network-cables-fiber-optic-diagram.jpg
+*shell*
+case-fan-choice-factors.jpg
+power-supply-choice-factors.jpg
+motherboard-blue.jpg
+cpu-sockets.jpg
+io-plate.jpg
+types-of-computer-ports.jpg
+cmos-battery.jpg
+computer-casing.jpg
+power-supply-unit.jpg
+motherboard-red.jpg
+cpu-or-processor.jpg
+chipset.jpg
+ram-memory-module.jpg
+video-card.jpg
+rom-bios-firmware.jpg
+bus.jpg
+sound-card.jpg
+hard-disk.jpg
+optical-drive.jpg
+computer-keyboard.jpg
+computer-mouse.jpg
+computer-monitor.jpg
+computer-ports-from-great-mike.jpg
+#*shell*#
+ports-mb9.gif
+ports-mac.gif
+ports-video.jpg
+[py:3.7.4]
+[17:21:48 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls blue*
+bluetooth-specifications-or-features.jpg
+[py:3.7.4]
+[19:22:18 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+s $ 
+[py:3.7.4]
+You have new mail in /var/mail/antoine
+[14:47:23 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls -1 expan*
+expansion-slot-agp.jpg
+expansion-slot-example-pci.jpg
+expansion-slot-example-pcie-x1.jpg
+expansion-slot-example-pcie-x16.jpg
+expansion-slot-mini-pci.jpg
+expansion-slot-pci-x.jpg
+expansion-slot-pci.jpg
+expansion-slot-pcie.jpg
+expansion-slot-riser-card.jpg
+expansion-slots-pcie-x1-through-x16.jpeg
+[py:3.7.4]
+[14:47:27 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ mv expansion-slots-pcie-x1-through-x16.jpeg expansion-slot-pcie-x1-through-x16.jpeg 
+[py:3.7.4]
+[14:47:42 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ ls network-cables-*
+network-cables-T568A-pinouts.jpg
+network-cables-T568A.jpg
+network-cables-T568B-pinouts.jpg
+network-cables-T568B.jpg
+network-cables-coaxial-cable.jpg
+network-cables-examples.jpg
+network-cables-fiber-optic-connector-duplex-multimode.jpg
+network-cables-fiber-optic-connector-lucent.jpg
+network-cables-fiber-optic-connector-straight-tip.jpg
+network-cables-fiber-optic-connector-subscriber.jpg
+network-cables-fiber-optic-cross-section.jpg
+network-cables-fiber-optic-diagram.jpg
+network-cables-fiber-optic-multimode.jpg
+network-cables-fiber-optic-single-mode.jpg
+network-cables-rj-45-utp-cable-and-socket.jpg
+network-cables-twisted-pair-shielded.jpg
+network-cables-twisted-pair-unshielded.jpg
+[py:3.7.4]
+[11:47:51 antoine:~/Projects/docdoc/assets/netacad-it-essentials]
+$ cd ../../
+[py:3.7.4]
+[15:04:37 antoine:~/Projects/docdoc]
+$ ls
+404.html	_config.yml	_layouts	about.md	index.md
+Gemfile		_config.yml~	_posts		about.md~
+Gemfile.lock	_includes	_site		assets
+[py:3.7.4]
+[15:04:37 antoine:~/Projects/docdoc]
+$ cd _posts/
+[py:3.7.4]
+[15:04:41 antoine:~/Projects/docdoc/_posts]
+$ ls -1tr
+2019-06-03-creating-a-website-with-jekyll.md~
+2019-06-03-installing-fastai.md~
+2019-06-03-setting-up-aws-instances.md~
+2019-06-10-creating-image-datasets-with-google.md~
+2019-06-03-setting-up-aws-instances.md
+2019-06-03-creating-a-website-with-jekyll.md
+2019-06-18-regression-forecasting-on-tabular-data-with-fastai.md~
+2019-06-27-unix-commands.md~
+2019-06-10-creating-image-datasets-with-google.md
+2019-08-22-how-to-learn-python.md~
+2019-08-22-how-to-learn-python.md
+2019-08-27-Python-file-handling.md~
+2019-08-27-python-file-handling.md
+2019-08-27-python-string-formatting.md~
+2019-08-27-python-string-formatting.md
+2019-09-10-mappa-coventrensis.md~
+2019-09-10-mappa-coventrensis.md
+2019-11-11-Interacting-with-kaggle-datasets.md~
+2019-10-22-ESGI-150-Athletic-Club.md~
+2019-10-22-ESGI-150-Athletic-Club.md
+2019-11-11-Interacting-with-kaggle-datasets.md
+2019-11-12-la-permanence.md~
+2019-06-18-regression-forecasting-on-tabular-data-with-fastai.md
+2019-11-12-la-permanence.md
+2019-12-03-fundamentals-of-cryptography.md~
+2019-12-03-fundamentals-of-cryptography.md
+2019-06-27-unix-commands.md
+2020-03-05-netacad-it-essentials.md~
+2020-03-15-btec-networking-and-architecture.md~
+2020-03-15-btec-networking-and-architecture.md
+2020-03-05-netacad-it-essentials.md
+[py:3.7.4]
+[15:04:48 antoine:~/Projects/docdoc/_posts]
+$ ls -1tr *.md
+2019-06-03-setting-up-aws-instances.md
+2019-06-03-creating-a-website-with-jekyll.md
+2019-06-10-creating-image-datasets-with-google.md
+2019-08-22-how-to-learn-python.md
+2019-08-27-python-file-handling.md
+2019-08-27-python-string-formatting.md
+2019-09-10-mappa-coventrensis.md
+2019-10-22-ESGI-150-Athletic-Club.md
+2019-11-11-Interacting-with-kaggle-datasets.md
+2019-06-18-regression-forecasting-on-tabular-data-with-fastai.md
+2019-11-12-la-permanence.md
+2019-12-03-fundamentals-of-cryptography.md
+2019-06-27-unix-commands.md
+2020-03-15-btec-networking-and-architecture.md
+2020-03-05-netacad-it-essentials.md
+[py:3.7.4]
+[15:04:57 antoine:~/Projects/docdoc/_posts]
+$ 
